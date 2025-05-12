@@ -1,4 +1,4 @@
-![Py Carousel Greedy Logo](cglogo.png)
+![Py Carousel Greedy Logo](https://raw.githubusercontent.com/CarmineCerrone/py_carouselgreedy/refs/heads/main/cglogo.png)
 # Py Carousel Greedy
 
 **A modular and user-friendly Python implementation of the Carousel Greedy algorithm.**
