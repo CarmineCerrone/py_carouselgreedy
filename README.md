@@ -68,6 +68,57 @@ Each example shows how to define a problem-specific greedy function and feasibil
 
 ---
 
+## 🛠️ Function Parameters and Customization
+
+When creating a `CarouselGreedy` instance, two user-defined functions must be provided:
+
+- `test_feasibility(cg_instance, solution)`
+- `greedy_function(cg_instance, solution, candidate)`
+
+These functions encapsulate the problem-specific logic and allow the algorithm to be used for a wide range of optimization problems.
+
+### 🔁 `cg_instance`: Passing Problem Data
+
+You can optionally pass a custom `data` object when instantiating the `carousel_greedy` class:
+
+```python
+cg = carousel_greedy(
+    candidate_elements=...,
+    test_feasibility=my_feasibility,
+    greedy_function=my_greedy,
+    data=your_custom_data  # optional
+)
+```
+
+This `data` object can store any useful information (e.g., a graph, cost matrix, etc.) and is accessible inside the two functions through `cg_instance.data`.
+
+### ✅ Feasibility Function
+
+```python
+def my_feasibility(cg_instance, solution):
+    ...
+```
+
+- `cg_instance`: instance of `carousel_greedy` class (with access to `.data`).
+- `solution`: the current set of selected elements.
+- **Returns**: `True` if the current solution is feasible, `False` otherwise.
+
+### 🔍 Greedy Function
+
+```python
+def my_greedy(cg_instance, solution, candidate):
+    ...
+```
+
+- `cg_instance`: instance of `CarouselGreedy`.
+- `solution`: the current partial solution.
+- `candidate`: the element under evaluation.
+- **Returns**: a real-valued score (higher = more promising).
+
+The **feasibility function must return a boolean**, and the **greedy function must return a real number**, which is used to guide the greedy selection. The candidate with the highest score is selected at each step.
+
+---
+
 ## 📖 Algorithm Overview
 
 The Carousel Greedy algorithm is composed of four phases:
