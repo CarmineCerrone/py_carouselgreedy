@@ -56,4 +56,14 @@ def main():
 
 
 if __name__ == '__main__':
+    """
+    Basic example of how to use the Carousel Greedy (CG) library on the Vertex Cover problem.
+
+    This script generates a random Erdos-Rényi graph and applies the CG algorithm to find 
+    a feasible vertex cover.
+
+    Intended as a minimal working example to demonstrate usage of the CG library.
+    
+    For more advanced configurations, see the 'mvc_enhanced.py' example.
+    """
     main()

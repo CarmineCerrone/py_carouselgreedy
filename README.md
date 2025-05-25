@@ -6,7 +6,7 @@
 `py-carouselgreedy` is the first open-source Python library designed specifically for the Carousel Greedy algorithm, a flexible metaheuristic for solving a wide variety of combinatorial optimization problems. The library was developed with a focus on ease of use, modularity, and integration into experimental pipelines.
 
 > 📄 Introduced in the Conference Paper:  
-> *Carousel Greedy: From Drone Photogrammetry to Social Network Analysis, A Systematic Survey and the First Open-Source Python Library*  
+> *Carousel Greedy: From Drone Routing to Social Network Analysis, Passing through Wireless Sensor Networks. A Systematic Survey and a Python Library*  
 > Raffaele Dragone, Carmine Cerrone, Bruce L. Golden  
 > Presented at ODS 2025
 
@@ -140,7 +140,7 @@ If you use this library in your research, please cite:
 
 ```bibtex
 @inproceedings{dragone2025carousel,
-  title={Carousel Greedy: From Drone Photogrammetry to Social Network Analysis, A Systematic Survey and the First Open-Source Python Library},
+  title={Carousel Greedy: From Drone Routing to Social Network Analysis, Passing through Wireless Sensor Networks. A Systematic Survey and a Python Library},
   author={Dragone, Raffaele and Cerrone, Carmine and Golden, Bruce L.},
   booktitle={Optimization and Decision Science (ODS)},
   year={2025}
